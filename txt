@@ -1,0 +1,4 @@
+
+    <h2>¡Consigue tu computadora perfecta AHORA!</h2>
+    <p>¡Consigue tu PC ideal con nosotros! Ofrecemos computadoras armadas diseñadas para diversas necesidades. Encuéntralas aquí.</p>
+    <h2>PC Armadas_</h2>

@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(back.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    backdrop-filter: blur(5px); /* Efecto borroso */
+    background-color: rgba(255, 255, 255, 0.047); /* Translúcido */
+}
+.logo{
+    font-family: system-ui;
+    cursor: pointer;
+    font-size: 2.5em;
+    color: white;
+    user-select: none;
+}
+.navegar a {
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    font-size: 1.1em;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+.navegar a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: white;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+.navegar a:hover:after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+    gap: 20px; /* Espaciado entre los elementos */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    margin: 50px auto; /* Margen superior e inferior de 50px, centrado horizontalmente */
+    padding-top: 100px; /* Añade espacio extra debajo del header */
+}
+.rep1 {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.196);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 30px rgba(145, 145, 145, 0.147);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    color: white;
+    text-align: center;
+}
+p {
+    padding: 0px 30px 0px 30px;
+    font-size: 20px;
+    color: white;
+    font-family: system-ui;
+    text-align: center;
+}
+.repimg1, .repimg2, .repimg3, .repimg4, .repimg5, .repimg6, .repimg7, .repimg8, .repimg9, .repimg10, .repimg11, .repimg12 {
+    cursor: pointer;
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+    transition: transform .2s;
+}
+.repimg1:hover, .repimg2:hover, .repimg3:hover, .repimg4:hover, .repimg5:hover, .repimg6:hover, .repimg7:hover, .repimg8:hover, .repimg9:hover, .repimg10:hover, .repimg11:hover, .repimg12:hover {
+    transform: scale(1.16);
+}
